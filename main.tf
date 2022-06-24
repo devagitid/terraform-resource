@@ -98,7 +98,7 @@ resource "tls_private_key" "example_ssh" {
 # Create virtual machine
 resource "azurerm_linux_virtual_machine" "myterraformvm" {
   count			= 2
-  name                  = "myVM_$(count.index)"
+  name                  = "myVM$(count.index)"
   location              = azurerm_resource_group.rg.location
   resource_group_name   = azurerm_resource_group.rg.name
   network_interface_ids = [azurerm_network_interface.myterraformnic.id]
