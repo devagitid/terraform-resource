@@ -1,9 +1,26 @@
-variable "resource_group_name_prefix" {
-  default       = "rg"
-  description   = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
+variable “node_location” {
+type = string
 }
 
-variable "resource_group_location" {
-  default       = "ukwest"
-  description   = "Location of the resource group."
+variable “resource_prefix” {
+type = string
+}
+
+variable “node_address_space” {
+default = [“1.0.0.0/16”]
+}
+
+#variable for network range
+
+variable “node_address_prefix” {
+default = “1.0.1.0/24”
+}
+
+#variable for Environment
+variable “Environment” {
+type = string
+}
+
+variable “node_count” {
+type = number
 }
