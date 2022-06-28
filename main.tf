@@ -96,7 +96,7 @@ vm_size = "Standard_DC1s_v3"
 delete_os_disk_on_termination = true
 
 storage_image_reference {
-publisher = "Rogue Wave Software"
+publisher = "OpenLogic"
 offer = "CentOS"
 sku = "7.9"
 version = "latest"
