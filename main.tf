@@ -92,13 +92,13 @@ name = "${var.resource_prefix}-${format("%02d", count.index)}"
 location = azurerm_resource_group.example_rg.location
 resource_group_name = azurerm_resource_group.example_rg.name
 network_interface_ids = [element(azurerm_network_interface.example_nic.*.id, count.index)]
-vm_size = "Standard_A1_v2"
+vm_size = "Standard_DC1s_v3"
 delete_os_disk_on_termination = true
 
 storage_image_reference {
 publisher = "OpenLogic"
 offer = "CentOS"
-sku = "7.5"
+sku = "7.9"
 version = "latest"
 }
 storage_os_disk {
