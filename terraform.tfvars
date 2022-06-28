@@ -1,3 +1,4 @@
+
 node_location = "East US 2"
 resource_prefix = "linuxnode"
 Environment = "Test"
