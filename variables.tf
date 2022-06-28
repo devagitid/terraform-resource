@@ -1,13 +1,13 @@
 variable "node_location" {
-type = "string"
+type = string
 }
 
 variable "resource_prefix" {
-type = "string"
+type = string
 }
 
 #variable for Environment
 variable "Environment" {
-type = "string"
+type = string
 }
 
