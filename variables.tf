@@ -7,7 +7,7 @@ type = "string"
 }
 
 #variable for Environment
-variable “"Environment" {
+variable "Environment" {
 type = "string"
 }
 
