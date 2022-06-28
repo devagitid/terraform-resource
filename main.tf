@@ -82,7 +82,7 @@ environment = "Test"
 resource "azurerm_subnet_network_security_group_association" "example_subnet_nsg_association" {
 subnet_id = azurerm_subnet.example_subnet.id
 network_security_group_id = azurerm_network_security_group.example_nsg.id
-
+}
 
 # Virtual Machine Creation — Linux
 resource "azurerm_virtual_machine" "example_linux_vm" {
